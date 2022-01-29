@@ -1,0 +1,75 @@
+{
+  "name": "inventory-application",
+  "productName": "UMD Inventory",
+  "version": "2.0.0",
+  "description": "Keep track of the computer inventory. All data is retrieved from the Inventory Google Sheet",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "build-installer": "electron-builder"
+  },
+  "build":{
+    "appId": "inventory-application",
+    "win":{
+      "target": ["nsis"],
+      "icon": "src/invicon.ico"
+    },
+    "nsis": {
+      "installerIcon": "src/invicon.ico",
+      "uninstallerIcon": "src/invicon.ico",
+      "uninstallDisplayName": "UMD Inventory",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [],
+  "author": {
+    "name": "Adam K",
+    "email": "adam.kenney531@gmail.com"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "inventory_application"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "googleapis": "^39.2.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^22.11.7",
+    "@electron-forge/cli": "^6.0.0-beta.57",
+    "@electron-forge/maker-deb": "^6.0.0-beta.57",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.57",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
+    "@electron-forge/maker-zip": "^6.0.0-beta.57",
+    "electron": "13.1.2"
+  }
+}

@@ -1,0 +1,121 @@
+body {
+  position:absolute;
+  top:-1vh;
+  left:-1vw;
+  font-size: 1em;
+  overflow: hidden;
+}
+
+#header{
+  background-image: linear-gradient(to right bottom, rgb(224, 186, 186), rgb(180, 40, 40));
+  border-bottom: .5rem solid black;
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-left: 5vw;
+}
+
+#header h2{
+  color: black;
+}
+
+.container{
+  padding-left: 5vw;
+  width: 100vw;
+  height: calc(92vh - .75rem);
+  border-bottom: .25rem solid black;
+  border-left: .25rem solid black;
+  border-right: .25rem solid black;
+  background: linear-gradient(to left bottom, rgb(180, 40, 40), rgb(224, 186, 186));
+}
+
+.navigation{
+  display: flex;
+  position: relative;
+  margin-bottom: 2vh;
+}
+
+.navBut{
+  cursor: pointer;
+  width: 10vw;
+  height: 5vh;
+  background: yellow;
+  border-bottom: .25rem solid black;
+  border-left: .25rem solid black;
+  border-right: .25rem solid black;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+.navBut:hover{
+  background: rgb(247, 255, 135);
+}
+
+#content-holder{
+  background: white;
+  width: calc(90vw - 1rem);
+  height: 75vh;
+  border: .25rem solid black;
+  border-radius: 1rem;
+}
+
+#animation{
+  position: absolute;
+  width: 10vw;
+  height: 5vh;
+  border-bottom: .25rem solid black;
+  border-left: .25rem solid black;
+  border-right: .25rem solid black;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background: rgb(145, 0, 0);
+  opacity: .7;
+}
+
+.summary{
+  top:0;
+  left:0;
+  transition: left .5s linear 0s;
+}
+.main{
+  top:0;
+  left: calc(10vw + .5rem);
+  transition: left .5s linear 0s;
+}
+.ad{
+  top:0;
+  left: calc(30vw + 1.5rem);
+  transition: left .5s linear 0s;
+}
+.dhcp{
+  top:0;
+  left: calc(20vw + 1rem);
+  transition: left .5s  linear 0s;
+}
+
+@keyframes loading {
+  50%{transform: rotateY(180deg);}
+  100%{transform: rotateY(360deg);}
+}
+#loading-screen{
+  width: 10vh;
+  height: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 28vh;
+
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+
+

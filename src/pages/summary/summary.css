@@ -1,0 +1,140 @@
+#contents{
+    position: relative;
+    height: 75vh;
+    display: flex; 
+    background: whitesmoke;
+    border-radius: .8rem;
+}
+
+#options-container{
+    height:90%;
+    border:.25rem solid black;
+    border-radius: 1rem;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 3vw;
+    margin-right: 1vw;
+}
+
+#options-container h1{
+    width: 12vw;
+    border-bottom: .25rem solid black;
+}
+
+#options{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 60vh;
+}
+
+#options div{
+    width: 10vw;
+    height: 3vh;
+    background-color: rgb(248, 100, 100);
+    border: .25rem solid black;
+    border-radius: .5rem;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#options div:hover{
+    background-color: rgb(250, 169, 185);
+}
+
+#data{
+    width:60vw;
+    height:90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: .25rem solid black;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+/**Animation**/
+span{
+    position: absolute;
+    width: 10vw;
+    height: 3vh;
+    border: .25rem solid black;
+    border-radius: .5rem;
+    background-color: rgb(241, 250, 109);
+    opacity: .5;
+}
+.bioe{
+    top:0;
+    left: 0;
+    transition: top .5s linear 0s;
+}
+.chbe{
+    top: calc(3vh + .5rem);
+    left: 0;
+    transition: top .5s linear 0s;
+}
+.cee{
+    top: calc(6vh + 1rem);
+    left: 0;
+    transition: top .5s linear 0s;
+}
+.ece{
+    top: calc(9vh + 1.5rem);
+    left: 0;
+    transition: top .5s linear 0s;
+}
+.eit{
+    top: calc(12vh + 2rem);
+    left: 0;
+    transition: top .5s linear 0s;
+}
+.engr{
+    top: calc(15vh + 2.5rem);
+    left: 0;
+    transition: top .5s linear 0s;
+}
+.fpe{
+    top: calc(18vh + 3rem);
+    left: 0;
+    transition: top .5s linear 0s;
+}
+.ireap{
+    top: calc(21vh + 3.5rem);
+    left: 0;
+    transition: top .5s linear 0s;
+}
+.isr{
+    top: calc(24vh + 4rem);
+    left: 0;
+    transition: top .5s linear 0s;
+}
+.math{
+    top: calc(27vh + 4.5rem);
+    left: 0;
+    transition: top .5s linear 0s;
+}
+.mse{
+    top: calc(30vh + 5rem);
+    left: 0;
+    transition: top .5s linear 0s;
+}
+.phys{
+    top: calc(33vh + 5.5rem);
+    left: 0;
+    transition: top .5s linear 0s;
+}
+.all{
+    top: calc(36vh + 6rem);
+    left: 0;
+    transition: top .5s linear 0s;
+}
+.archive{
+    top: calc(39vh + 6.5rem);
+    left: 0;
+    transition: top .5s linear 0s;
+}

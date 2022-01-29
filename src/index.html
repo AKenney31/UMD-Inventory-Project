@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>UMD Inventory</title>
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <script src="controller.js" type="module" async defer></script>
+    <div id="header">
+      <h2>University of Maryland</h2>
+    </div>
+    <div class="container">
+      <div class="navigation">
+        <div id="animation" class="summary"></div>
+        <div id="summary" class="navBut"><p>Summary</p></div>
+        <div id="main" class="navBut"><p>Main</p></div>
+        <div id="dhcp" class="navBut"><p>DHCP IPs</p></div>
+        <div id="ad" class="navBut"><p>Active Directory</p></div>
+      </div>
+      <div id="content-holder" >
+        <div class="content"></div>
+      </div>
+    </div>
+  </body>
+</html>
