@@ -93,3 +93,6 @@ keys.json
 
 #dist
 dist/*
+
+yarn.lock
+package-lock.json
